@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: NST-2
+    env: python
+    rootDir: NST_Code
+    buildCommand: pip install -r ../requirements.txt
+    startCommand: gunicorn app:app
